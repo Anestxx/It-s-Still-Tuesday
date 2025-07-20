@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background: #b13d8e;
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+#character-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#character {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
+  transition: transform 0.1s ease;
+}
+
+body, * {
+  image-rendering: pixelated;
+  font-family: 'Courier New', monospace;
+}
+
+.rain-petals {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.petal {
+  position: absolute;
+  top: -10%;
+  font-size: 1.2rem;
+  animation: fall 6s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+#character {
+  z-index: 10;
+  position: relative;
+  pointer-events: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#dialogue-box {
+  position: inherit;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 12px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px #000;
+  z-index: 15;
+  border-radius: 20px;
+}
+#game-container {
+  width: 400px;
+  height: 400px;
+  background: #e799e0;
+  border: 2px solid #000000;
+  border-radius: 0; /* Remove smoothness */
+  position: relative;
+  box-shadow: 2px 2px #000;
+  image-rendering: pixelated;
+  border-radius: 20px;
+}
