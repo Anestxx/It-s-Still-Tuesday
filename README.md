@@ -17,3 +17,4 @@ Typewriter-style text paired with soft typing sounds for a nostalgic game feel.
 Retro-style game UI fonts and layout.
 
 This project is a fun blend of UI animation, light character scripting, and creative front-end design — ideal for learning event handling, DOM manipulation, and creating emotional interactions in the browser.
+<img width="893" height="825" alt="image" src="https://github.com/user-attachments/assets/e16e285a-d1ba-49ef-a1f3-8f01ace86897" />
